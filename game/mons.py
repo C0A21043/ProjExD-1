@@ -131,10 +131,10 @@ def main():
     global startFlag, flag
     start_x = 10
     start_y = 10
-    scr = Screen("モンスタ", (1600,900), "fig/pg_bg.jpg") # Screenオブジェクトのインスタンス生成
+    scr = Screen("モンスタ", (1600,900), "fig/monst.jpeg") # Screenオブジェクトのインスタンス生成
     clock = pg.time.Clock()
         
-    kkt = Enemy("fig/6.png", 2.0, (900,400), 3) # Enemyオブジェクトのインスタンス生成
+    kkt = Enemy("fig/4.png", 2.0, (900,400), 3) # Enemyオブジェクトのインスタンス生成
     kkt.blit(scr)
     my = My((255,0,0), 25, (start_x, start_y), scr)
     my.blit(scr)
